@@ -1,0 +1,24 @@
+
+con = psycopg2.connect(host="localhost", database="Amaize", user="postgres", password="@nubh@v")
+
+cur = con.cursor()
+cur.execute('''CREATE TABLE MANDI
+      (STATE TEXT, DISTRICT TEXT, MARKET TEXT,
+      COMMODITY TEXT, ARRIVAL TEXT, MINPRICE DECIMAL, MAXPRICE DECIMAL);''')
+
+
+con.commit()
+con.close()
+
+
+con = psycopg2.connect(host="localhost", database="Amaize", user="postgres", password="@nubh@v")
+
+cur = con.cursor()
+cur.execute('''CREATE TABLE MANDI
+      (STATE TEXT, DISTRICT TEXT, MARKET TEXT,
+      COMMODITY TEXT, ARRIVAL TEXT, MINPRICE DECIMAL, MAXPRICE DECIMAL);''')
+
+
+con.commit()
+con.close()
+
