@@ -1,0 +1,26 @@
+To automate your python script on Windows, you need to follow the following two steps
+
+  1. Create a Pyhton executable file (bat file)
+  2. Configure the task in Windows task scheduler
+  
+A BAT file is a DOS batch file used to execute commands with the Windows Command Prompt (cmd.exe). 
+It contains a series of line commands that typically might be entered at the DOS command prompt. 
+BAT files are most commonly used to start programs and run maintenance utilities within Windows. — fileinfo.com
+
+Creating a BAT file is fairly simple. You can follow the steps given below
+
+1. Open Notepad
+2. Add the following format "<Your python.exe location>" "<Your python script location>"
+  Example:
+  "C:\Users\admin\Python\Python39\python.exe" "C:\Users\admin\Python\Python39\Code\New.py"
+3. Save the file with a .bat extension
+4. Double click the bat file or run it via cmd to execute the sctipt
+
+Using Windows Task Scheduler:
+
+1. On Windows 10 search for task scheduler
+2. Click on "Create basic task"
+3. A wizard opens up; enter your name and description
+4. The next screen asks you to choose your trigger ie. when you want your script to run
+5. Next you need to define an action. Here select start a program and browse and select your BAT file
+6. Click finish and your script is ready to be executed by windows at the time of your choice
